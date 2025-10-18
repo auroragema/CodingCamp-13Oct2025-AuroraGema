@@ -1,5 +1,3 @@
-// Modern To-Do List Application
-
 class TodoApp {
     constructor() {
         this.todos = this.loadTodos();
@@ -174,7 +172,6 @@ class TodoApp {
         if (filteredTodos.length === 0) {
             todoList.innerHTML = `
                 <div class="empty-state">
-                    <div class="empty-icon">📝</div>
                     <p>No tasks found</p>
                     <small>${this.getEmptyMessage()}</small>
                 </div>
@@ -200,7 +197,7 @@ class TodoApp {
                         ${todo.completed ? '↩️ Undo' : '✓ Done'}
                     </button>
                     <button class="btn-action btn-delete" onclick="todoApp.handleDeleteTodo(${todo.id})">
-                        🗑️ Delete
+                        Delete
                     </button>
                 </div>
             </div>
