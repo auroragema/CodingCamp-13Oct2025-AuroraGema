@@ -1,5 +1,3 @@
-/* Modern To-Do List Styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -226,7 +224,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: var(--text-secondary);
 }
 
-/* Todo List */
 .todo-list {
     min-height: 200px;
 }
